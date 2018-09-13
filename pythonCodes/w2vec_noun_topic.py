@@ -214,14 +214,9 @@ def cleanTranscript(transcript):
     trans = trans.replace('good morning', '')
     trans = trans.replace(' kinda ',' ')
     trans = trans.replace(' morning ', ' ')
-    trans = trans.replace('calling fidelity investments', ' ')
-    trans = trans.replace('calling fidelity', ' ')
     trans = trans.replace('connecting support', ' ')
     trans = trans.replace('neck support', ' ')
     trans = trans.replace('necking support',' ')
-    trans = trans.replace('private client group',' ')
-    trans = trans.replace('fidelity investments', ' ')
-    trans = trans.replace('fidelity investment', ' ')
     #trans = trans.replace(' great ', ' ')
     trans = trans.replace(' welcome ', ' ')
     trans = trans.replace(' well ', ' ')
@@ -342,11 +337,6 @@ def cleanTranscript(transcript):
 
 
     #keeping some I will lose the 1 and 2 syllable words
-    trans = trans.replace(' m rd ', ' mrd ')
-    trans = trans.replace(' m r d ', ' mrd ')
-    trans = trans.replace(' p a s ', ' pas ')
-    trans = trans.replace(' fidelity go ', ' fidgo ')
-
 
     #commenting now, because we will now learn this using Gensim phraser class
     '''
@@ -355,16 +345,6 @@ def cleanTranscript(transcript):
     trans = trans.replace('mutual funds', 'mutualfund')
     trans = trans.replace('mutual fund', 'mutualfund')
     trans = trans.replace(' non managed ', ' nonmanaged ')
-    trans = trans.replace('portfolio advisory services', 'pas')
-    trans = trans.replace('portfolio advisory service','pas')
-    trans = trans.replace('portfolio advisory','pas')
-    trans = trans.replace('advisory services','pas')
-    trans = trans.replace('advisory service', 'pas')
-    trans = trans.replace('managed accounts', 'managedAccount')
-    trans = trans.replace('managed account','managedAccount')
-    trans = trans.replace('manage accounts', 'managedAccount')
-    trans = trans.replace('manage account', 'managedAccount')
-    #trans = trans.replace(' fidelity ', ' ')
     '''
 
     #adding delimiters, makes more sense to do this in end as ... always comes with a space on both sides
