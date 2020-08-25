@@ -1,6 +1,6 @@
 # LDA Pipeline for Speech Processing
 
-This project is a POC I did for building topic modeling pipelines to analyze automated speech recognition system output.
+This code is for building topic modeling pipelines to analyze automated speech recognition system outputs.
 Disclaimer : This is not the production version and is only for reference and learning purposes.
 This pipeline includes three components:
 * Text pre processing : Implements lemmatization, Gensim phrasing, NP chunking and Synonym substution using word2vec and wordnet.
